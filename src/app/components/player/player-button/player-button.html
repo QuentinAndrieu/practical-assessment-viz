@@ -1,0 +1,65 @@
+<div class="player-button">
+    <button type="button" data-toggle="modal" data-target="#modalAddPlayer" id="addPlayerButton" class="btn btn-outline-dark">Add players</button>
+
+    <div class="modal fade" id="modalAddPlayer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Player</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <form class="form" name="addPlayerForm" ng-submit="$ctrl.onSubmit();">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="form-group row">
+                                <label for="firstname" class="col-sm-2 col-form-label col-form-label-sm">Firstname</label>
+                                <div class="col-sm-10">
+                                    <input required ng-model="$ctrl.player.firstname" type="firstname" class="form-control form-control-sm" id="firstname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="surname" class="col-sm-2 col-form-label col-form-label-sm">Surname</label>
+                                <div class="col-sm-10">
+                                    <input required ng-model="$ctrl.player.surname" type="text" class="form-control form-control-sm" id="surname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="sex" class="col-sm-2 col-form-label col-form-label-sm">Sex</label>
+                                <div class="col-sm-10">
+                                    <select required ng-model="$ctrl.player.sex" class="form-control" id="sex">
+                                        <option selected="selected" value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="sex" class="col-sm-2 col-form-label col-form-label-sm">Tier</label>
+                                <div class="col-sm-10">
+                                    <select required ng-model="$ctrl.player.tier" class="form-control" id="tier">
+                                        <option selected="selected" value="gold">Gold</option>
+                                        <option value="silver">Silver</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                <div class="col-sm-10">
+                                    <input required ng-model="$ctrl.player.email" type="email" class="form-control form-control-sm" id="smFormGroupInput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-secondary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

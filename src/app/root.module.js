@@ -10,7 +10,7 @@ export const root = angular
   .module('root', [
     uiRouter,
     common,
-    components,
+    components
   ])
   .component('root', rootComponent)
   .config(($locationProvider, $urlRouterProvider) => {

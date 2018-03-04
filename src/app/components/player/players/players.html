@@ -1,34 +1,43 @@
 <div class="players">
-    <table class="table table-bordered table-striped">
-        <thead class="thead-light">
-            <tr>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('id')">#</th>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('firstname')">First Name</th>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('surname')">Surname</th>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('sex')">Sex</th>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('tier')">Tier</th>
-                <th class="category" scope="col" ng-click="$ctrl.sortBy('email')">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="player in $ctrl.players | orderBy:$ctrl.propertyName:$ctrl.reverse">
-                <th scope="row">{{player.id}}</th>
-                <td>{{player.firstname}}</td>
-                <td>{{player.surname}}</td>
-                <td class="column-image" ng-if="player.sex == 'male'">
-                    <img class="image-list" src="/img/icon_male.svg">
-                </td>
-                <td class="column-image" ng-if="player.sex == 'female'">
-                    <img class="image-list" src="/img/icon_female.svg">
-                </td>
-                <td class="column-image" ng-if="player.tier == 'gold'">
-                    <img class="image-list" src="/img/tier_gold.svg">
-                </td>
-                <td class="column-image" ng-if="player.tier == 'silver'">
-                    <img class="image-list" src="/img/tier_silver.svg">
-                </td>
-                <td>{{player.email}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-2">
+                <player-button></player-button>
+            </div>
+            <div class="col-10">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('id')">#</th>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('firstname')">First Name</th>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('surname')">Surname</th>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('sex')">Sex</th>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('tier')">Tier</th>
+                            <th class="category" scope="col" ng-click="$ctrl.sortBy('email')">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="player in $ctrl.players | orderBy:$ctrl.propertyName:$ctrl.reverse">
+                            <th scope="row">{{player.id}}</th>
+                            <td>{{player.firstname}}</td>
+                            <td>{{player.surname}}</td>
+                            <td class="column-image" ng-if="player.sex == 'male'">
+                                <img class="image-list" src="/img/icon_male.svg">
+                            </td>
+                            <td class="column-image" ng-if="player.sex == 'female'">
+                                <img class="image-list" src="/img/icon_female.svg">
+                            </td>
+                            <td class="column-image" ng-if="player.tier == 'gold'">
+                                <img class="image-list" src="/img/tier_gold.svg">
+                            </td>
+                            <td class="column-image" ng-if="player.tier == 'silver'">
+                                <img class="image-list" src="/img/tier_silver.svg">
+                            </td>
+                            <td>{{player.email}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

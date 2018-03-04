@@ -1,18 +1,16 @@
 {
-  "name": "default-project",
+  "name": "player-list",
   "version": "1.0.0",
   "author": "quentinandrieu",
   "description": "Default project app for Ultimate AngularJS",
   "scripts": {
-    "start": "webpack-dev-server -d --progress --colors --inline --hot --https --open --content-base bin/",
-    "deploy": "npm run build:dist"
+    "start": "webpack-dev-server -d --progress --colors --inline --hot --https --open --content-base bin/"
   },
   "license": "MIT",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-loading-bar": "^0.9.0",
     "angular-messages": "^1.5.8",
-    "angular-ui-bootstrap": "^2.5.6",
     "angular-ui-router": "1.0.0-beta.3",
     "clean-webpack-plugin": "^0.1.10",
     "copy-webpack-plugin": "^3.0.1",

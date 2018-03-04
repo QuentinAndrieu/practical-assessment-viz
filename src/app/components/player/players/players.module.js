@@ -2,7 +2,6 @@ import uiRouter from 'angular-ui-router';
 import { playersComponent } from './players.component';
 import './players.scss';
 
-
 export const players = angular
     .module('components.player.players', [
         uiRouter
