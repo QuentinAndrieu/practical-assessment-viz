@@ -2,7 +2,7 @@
   "name": "player-list",
   "version": "1.0.0",
   "author": "quentinandrieu",
-  "description": "Default project app for Ultimate AngularJS",
+  "description": "Practical assessment Viz Explorer",
   "scripts": {
     "start": "webpack-dev-server -d --progress --colors --inline --hot --https --open --content-base bin/"
   },
