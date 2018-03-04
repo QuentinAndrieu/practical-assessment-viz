@@ -22,6 +22,8 @@ export const playerButtonComponent = {
 
         onSubmit() {
             this.playerService.createPlayer(this.player);
+            this.player = {};
+
             $('#modalAddPlayer').modal('hide');
         }
     },

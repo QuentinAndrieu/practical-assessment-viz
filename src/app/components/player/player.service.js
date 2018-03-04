@@ -10,7 +10,7 @@ export class PlayerService {
     }
 
     createPlayer(player) {
-        this.players.push(player);
+        this.players.unshift(player);
     }
 
     getPlayers() {
