@@ -16,6 +16,7 @@ export const app = angular
 
     $stateProvider
       .state('app', {
+        redirectTo: 'players',
         url: '/',
         component: 'app'
       });

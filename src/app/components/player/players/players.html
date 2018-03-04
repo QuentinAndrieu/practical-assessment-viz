@@ -1,0 +1,34 @@
+<div class="players">
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Sex</th>
+                <th scope="col">Tier</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="player in $ctrl.players">
+                <th scope="row">{{player.id}}</th>
+                <td>{{player.firstname}}</td>
+                <td>{{player.surname}}</td>
+                <td class="column-image" ng-if="player.sex == 'male'">
+                    <img class="image-list" src="/img/icon_male.svg">
+                </td>
+                <td class="column-image" ng-if="player.sex == 'female'">
+                    <img class="image-list" src="/img/icon_female.svg">
+                </td>
+                <td class="column-image" ng-if="player.tier == 'gold'">
+                    <img class="image-list" src="/img/tier_gold.svg">
+                </td>
+                <td class="column-image" ng-if="player.tier == 'silver'">
+                    <img class="image-list" src="/img/tier_silver.svg">
+                </td>
+                <td>{{player.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -6,14 +6,10 @@ export const sideBarComponent = {
   templateUrl,
   controller: class SideBarComponent {
 
-      constructor($state, $uibModal) {
+      constructor($state) {
           'ngInject';
 
           this.$state = $state;
-      }
-
-      openModal(){
-
       }
   },
 };

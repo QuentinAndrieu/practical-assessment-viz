@@ -4,7 +4,7 @@
             "id": 1,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -52,7 +52,7 @@
             "id": 7,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         },
@@ -60,7 +60,7 @@
             "id": 8,
             "firstname": "Todd",
             "surname": "Motto",
-            "sex": "Todd Motto",
+            "sex": "male",
             "tier": "gold",
             "email": "toddmotto@gmail.com"
         }
