@@ -4,7 +4,7 @@ export class PlayerService {
 
     constructor($http) {
         'ngInject';
-        
+
         this.$http = $http;
         this.players;
     }

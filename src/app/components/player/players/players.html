@@ -2,16 +2,16 @@
     <table class="table table-bordered table-striped">
         <thead class="thead-light">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Surname</th>
-                <th scope="col">Sex</th>
-                <th scope="col">Tier</th>
-                <th scope="col">Email</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('id')">#</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('firstname')">First Name</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('surname')">Surname</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('sex')">Sex</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('tier')">Tier</th>
+                <th class="category" scope="col" ng-click="$ctrl.sortBy('email')">Email</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="player in $ctrl.players">
+            <tr ng-repeat="player in $ctrl.players | orderBy:$ctrl.propertyName:$ctrl.reverse">
                 <th scope="row">{{player.id}}</th>
                 <td>{{player.firstname}}</td>
                 <td>{{player.surname}}</td>
