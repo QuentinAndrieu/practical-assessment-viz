@@ -11,6 +11,7 @@ const paths = {
     index: `${root}/index.html`,
     manifest: `${root}/manifest.json`,
     images: `${root}/img/**/*`,
+    assets: `${root}/assets/**/*`
   },
 };
 
@@ -26,6 +27,10 @@ const prep = {
   }, {
     from: paths.static.images,
     to: 'img/',
+    flatten: true,
+  }, {
+    from: paths.static.assets,
+    to: 'assets/',
     flatten: true,
   }]),
 };
